@@ -9,13 +9,17 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    algo.cpp \
+    choosefile.cpp \
+    chooseimage.cpp \
     main.cpp \
-    mainwindow.cpp \
-    searchCode.cpp
+    mainwindow.cpp
 
 HEADERS += \
-    mainwindow.h \
-    searchCode.h
+    algo.h \
+    choosefile.h \
+    chooseimage.h \
+    mainwindow.h
 
 FORMS += \
     mainwindow.ui
