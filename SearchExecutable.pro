@@ -10,15 +10,13 @@ CONFIG += c++11
 
 SOURCES += \
     algo.cpp \
-    choosefile.cpp \
-    chooseimage.cpp \
+    image.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     algo.h \
-    choosefile.h \
-    chooseimage.h \
+    image.h \
     mainwindow.h
 
 FORMS += \

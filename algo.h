@@ -1,24 +1,16 @@
 #ifndef ALGO_H
 #define ALGO_H
 
-#include "chooseimage.h"//;
-#include "choosefile.h"//;
+#include <QBitArray>
+#include <QImage>
 
-class algo
-{
-private:
-   QImage imageOutput;
-   QString messageAfterAnalyse;
-   QFile fileOutput;
-public:
-   void encode(QImage image, QFile file);
-   void decode(QImage image);
-   void analyse(QImage image);
-   QImage getImageOutput();
-   QFile getFileOutput();
-   QString getMessage();
-   algo();
+QBitArray bytesToBits(QByteArray bytes);
+QByteArray bitsToBytes(QBitArray bits);
 
-};
+//class algo
+//{
+//public:
+//    algo();
+//};
 
 #endif // ALGO_H

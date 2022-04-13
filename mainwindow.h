@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "algo.h"
+#include <QFile>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -16,6 +16,12 @@ public:
     MainWindow(QWidget *parent = nullptr);
     void chooseFile();
     void chooseImage();
+    void chooseImageForDecode();
+    void decode();
+    void encode();
+    void analyse();
+    void downloadFile();
+    void chooseImageForAnalyse();
     ~MainWindow();
 
 private slots:
@@ -27,9 +33,11 @@ private slots:
 
     void on_decodeButton_clicked();
 
-    void on_downloadButton_clicked();
-
     void on_uploadButtonForAnalyse_clicked();
+
+    void on_encodeButton_clicked();
+
+    void on_dowloadEncodeImage_clicked();
 
 private:
     Ui::MainWindow *ui;

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>662</width>
-    <height>511</height>
+    <width>910</width>
+    <height>690</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
     <item row="0" column="0">
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -32,20 +32,6 @@
           </property>
          </widget>
         </item>
-        <item row="0" column="1">
-         <widget class="QLabel" name="showFileName">
-          <property name="text">
-           <string/>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="1" rowspan="4">
-         <widget class="QLabel" name="imageShow">
-          <property name="text">
-           <string/>
-          </property>
-         </widget>
-        </item>
         <item row="5" column="0" colspan="2">
          <widget class="QPushButton" name="encodeButton">
           <property name="text">
@@ -53,10 +39,38 @@
           </property>
          </widget>
         </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="showFileName">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
         <item row="2" column="0">
          <widget class="QPushButton" name="ChooseImageButton">
           <property name="text">
            <string>Choose Image</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QPushButton" name="dowloadEncodeImage">
+          <property name="text">
+           <string>Dowload</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1" rowspan="2">
+         <widget class="QLabel" name="showEncodedImage">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" rowspan="2">
+         <widget class="QLabel" name="imageShow">
+          <property name="text">
+           <string/>
           </property>
          </widget>
         </item>
@@ -74,24 +88,17 @@
           </property>
          </widget>
         </item>
-        <item row="0" column="0" colspan="2">
-         <widget class="QPushButton" name="uploadButtonForDecode">
-          <property name="text">
-           <string>upload</string>
-          </property>
-         </widget>
-        </item>
-        <item row="3" column="0" colspan="2">
-         <widget class="QPushButton" name="downloadButton">
-          <property name="text">
-           <string>download secret</string>
-          </property>
-         </widget>
-        </item>
         <item row="1" column="0" colspan="2">
          <widget class="QLabel" name="showImageDecode">
           <property name="text">
            <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <widget class="QPushButton" name="uploadButtonForDecode">
+          <property name="text">
+           <string>upload</string>
           </property>
          </widget>
         </item>
@@ -102,17 +109,17 @@
         <string>Analyse</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <widget class="QPushButton" name="uploadButtonForAnalyse">
+          <property name="text">
+           <string>Analyse</string>
+          </property>
+         </widget>
+        </item>
         <item row="1" column="0">
          <widget class="QLabel" name="showImageAnalyse">
           <property name="text">
            <string/>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="0">
-         <widget class="QPushButton" name="uploadButtonForAnalyse">
-          <property name="text">
-           <string>upload</string>
           </property>
          </widget>
         </item>
@@ -130,7 +137,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>662</width>
+     <width>910</width>
      <height>24</height>
     </rect>
    </property>
